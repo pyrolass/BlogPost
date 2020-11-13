@@ -12,6 +12,7 @@ struct Ident{
     static let regsiterSeg="RegisterToBlog"
     static let cellIdent="ReusableCell"
     static let cellNib="BlogCell"
+    static let postSegue="GoToPost"
     
     
 }

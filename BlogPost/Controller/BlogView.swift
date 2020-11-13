@@ -8,7 +8,7 @@
 import UIKit
 
 import Firebase
-class BlogView: UIViewController, UITableViewDataSource {
+class BlogView: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     
 
@@ -23,9 +23,12 @@ class BlogView: UIViewController, UITableViewDataSource {
         // Do any additional setup after loading the view.
         tableView.dataSource=self
         
+        tableView.delegate=self
+        
         navigationItem.hidesBackButton = true
         
         tableView.register(UINib(nibName: "BlogCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
+        
         
         loadItem()
         
@@ -112,7 +115,7 @@ class BlogView: UIViewController, UITableViewDataSource {
     
     
     
-    //MARK: - tableView items
+    //MARK: - tableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return blogBrain.count
     }
@@ -127,4 +130,10 @@ class BlogView: UIViewController, UITableViewDataSource {
         return cell
     }
     
+    
+    //MARK: - tableViewDelegate
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: Ident.postSegue, sender: self)
+    }
 }

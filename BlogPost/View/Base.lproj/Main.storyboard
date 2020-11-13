@@ -234,14 +234,21 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="your story" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dSd-E2-Fjw">
-                                        <rect key="frame" x="23" y="69" width="372" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mB2-Ss-OlM">
+                                        <rect key="frame" x="26" y="74" width="367" height="692"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="mB2-Ss-OlM" firstAttribute="leading" secondItem="RYM-3X-GPh" secondAttribute="leading" constant="26" id="4dr-GL-rnZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="mB2-Ss-OlM" secondAttribute="bottom" constant="42" id="9G2-AB-ldR"/>
+                                    <constraint firstAttribute="trailing" secondItem="mB2-Ss-OlM" secondAttribute="trailing" constant="21" id="vOO-mi-HTB"/>
+                                    <constraint firstItem="mB2-Ss-OlM" firstAttribute="top" secondItem="RYM-3X-GPh" secondAttribute="top" constant="74" id="yF2-RG-bRy"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9B4-gn-APB"/>
@@ -254,6 +261,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XAi-1C-j91"/>
+                    <connections>
+                        <outlet property="textView" destination="mB2-Ss-OlM" id="To1-rW-m5I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nA7-HT-4Iy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -282,6 +292,9 @@
         <segue reference="WwZ-l5-bIR"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
