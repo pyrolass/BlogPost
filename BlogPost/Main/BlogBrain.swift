@@ -12,4 +12,5 @@ struct BlogBrain{
     let author:String
     
     
+    
 }

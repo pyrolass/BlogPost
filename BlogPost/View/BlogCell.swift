@@ -24,4 +24,8 @@ class BlogCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func goPressed(_ sender: UIButton) {
+       
+        
+    }
 }
