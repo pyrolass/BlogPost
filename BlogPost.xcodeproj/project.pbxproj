@@ -3,29 +3,51 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36382C53DDF89F9D44C09129 /* Pods_BlogPost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82CEC4163D4046B983FE4EE /* Pods_BlogPost.framework */; };
+		AD59CA4F255EA6ED009B6C07 /* BlogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD59CA4D255EA6ED009B6C07 /* BlogCell.swift */; };
+		AD59CA50255EA6ED009B6C07 /* BlogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD59CA4E255EA6ED009B6C07 /* BlogCell.xib */; };
+		AD59CA53255EAC06009B6C07 /* BlogBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD59CA52255EAC06009B6C07 /* BlogBrain.swift */; };
 		ADCA4637255DAB5100B8F6D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA4636255DAB5100B8F6D3 /* AppDelegate.swift */; };
 		ADCA4639255DAB5100B8F6D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA4638255DAB5100B8F6D3 /* SceneDelegate.swift */; };
-		ADCA463B255DAB5100B8F6D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA463A255DAB5100B8F6D3 /* ViewController.swift */; };
+		ADCA463B255DAB5100B8F6D3 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA463A255DAB5100B8F6D3 /* FirstView.swift */; };
 		ADCA463E255DAB5100B8F6D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCA463C255DAB5100B8F6D3 /* Main.storyboard */; };
 		ADCA4641255DAB5100B8F6D3 /* BlogPost.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADCA463F255DAB5100B8F6D3 /* BlogPost.xcdatamodeld */; };
 		ADCA4643255DAB5100B8F6D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADCA4642255DAB5100B8F6D3 /* Assets.xcassets */; };
 		ADCA4646255DAB5100B8F6D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCA4644255DAB5100B8F6D3 /* LaunchScreen.storyboard */; };
+		ADCA464F255DAB6500B8F6D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADCA464E255DAB6500B8F6D3 /* GoogleService-Info.plist */; };
+		ADD0EC51255DAF020037FEBC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD0EC50255DAF020037FEBC /* LoginView.swift */; };
+		ADD0EC54255DAF140037FEBC /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD0EC53255DAF140037FEBC /* RegisterView.swift */; };
+		ADD0EC57255DAF260037FEBC /* BlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD0EC56255DAF260037FEBC /* BlogView.swift */; };
+		ADD0EC5A255DAF380037FEBC /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD0EC59255DAF380037FEBC /* PostView.swift */; };
+		ADD0EC5D255DB7C10037FEBC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD0EC5C255DB7C10037FEBC /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84419D97BBE314EEC74C2477 /* Pods-BlogPost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlogPost.release.xcconfig"; path = "Target Support Files/Pods-BlogPost/Pods-BlogPost.release.xcconfig"; sourceTree = "<group>"; };
+		AD59CA4D255EA6ED009B6C07 /* BlogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogCell.swift; sourceTree = "<group>"; };
+		AD59CA4E255EA6ED009B6C07 /* BlogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlogCell.xib; sourceTree = "<group>"; };
+		AD59CA52255EAC06009B6C07 /* BlogBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogBrain.swift; sourceTree = "<group>"; };
 		ADCA4633255DAB5100B8F6D3 /* BlogPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlogPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCA4636255DAB5100B8F6D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADCA4638255DAB5100B8F6D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ADCA463A255DAB5100B8F6D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADCA463A255DAB5100B8F6D3 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		ADCA463D255DAB5100B8F6D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADCA4640255DAB5100B8F6D3 /* BlogPost.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BlogPost.xcdatamodel; sourceTree = "<group>"; };
 		ADCA4642255DAB5100B8F6D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADCA4645255DAB5100B8F6D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADCA4647255DAB5100B8F6D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADCA464E255DAB6500B8F6D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ADD0EC50255DAF020037FEBC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		ADD0EC53255DAF140037FEBC /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		ADD0EC56255DAF260037FEBC /* BlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogView.swift; sourceTree = "<group>"; };
+		ADD0EC59255DAF380037FEBC /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		ADD0EC5C255DB7C10037FEBC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C82CEC4163D4046B983FE4EE /* Pods_BlogPost.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlogPost.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22A115C0BD23306B9B2E0C2 /* Pods-BlogPost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlogPost.debug.xcconfig"; path = "Target Support Files/Pods-BlogPost/Pods-BlogPost.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +55,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36382C53DDF89F9D44C09129 /* Pods_BlogPost.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		625F5AD6E472D81945BBD389 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F22A115C0BD23306B9B2E0C2 /* Pods-BlogPost.debug.xcconfig */,
+				84419D97BBE314EEC74C2477 /* Pods-BlogPost.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		ADCA462A255DAB5000B8F6D3 = {
 			isa = PBXGroup;
 			children = (
 				ADCA4635255DAB5100B8F6D3 /* BlogPost */,
 				ADCA4634255DAB5100B8F6D3 /* Products */,
+				625F5AD6E472D81945BBD389 /* Pods */,
+				FCBB350E9C3B8139765F3A10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +94,55 @@
 			children = (
 				ADCA4636255DAB5100B8F6D3 /* AppDelegate.swift */,
 				ADCA4638255DAB5100B8F6D3 /* SceneDelegate.swift */,
-				ADCA463A255DAB5100B8F6D3 /* ViewController.swift */,
-				ADCA463C255DAB5100B8F6D3 /* Main.storyboard */,
+				ADCA4651255DAB7B00B8F6D3 /* Main */,
+				ADCA4652255DAB8500B8F6D3 /* View */,
+				ADCA4653255DABA000B8F6D3 /* Controller */,
 				ADCA4642255DAB5100B8F6D3 /* Assets.xcassets */,
 				ADCA4644255DAB5100B8F6D3 /* LaunchScreen.storyboard */,
 				ADCA4647255DAB5100B8F6D3 /* Info.plist */,
+				ADCA464E255DAB6500B8F6D3 /* GoogleService-Info.plist */,
 				ADCA463F255DAB5100B8F6D3 /* BlogPost.xcdatamodeld */,
+				ADD0EC5C255DB7C10037FEBC /* Constants.swift */,
 			);
 			path = BlogPost;
+			sourceTree = "<group>";
+		};
+		ADCA4651255DAB7B00B8F6D3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AD59CA52255EAC06009B6C07 /* BlogBrain.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		ADCA4652255DAB8500B8F6D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADCA463C255DAB5100B8F6D3 /* Main.storyboard */,
+				AD59CA4D255EA6ED009B6C07 /* BlogCell.swift */,
+				AD59CA4E255EA6ED009B6C07 /* BlogCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ADCA4653255DABA000B8F6D3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ADCA463A255DAB5100B8F6D3 /* FirstView.swift */,
+				ADD0EC50255DAF020037FEBC /* LoginView.swift */,
+				ADD0EC53255DAF140037FEBC /* RegisterView.swift */,
+				ADD0EC56255DAF260037FEBC /* BlogView.swift */,
+				ADD0EC59255DAF380037FEBC /* PostView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FCBB350E9C3B8139765F3A10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C82CEC4163D4046B983FE4EE /* Pods_BlogPost.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADCA464A255DAB5100B8F6D3 /* Build configuration list for PBXNativeTarget "BlogPost" */;
 			buildPhases = (
+				B6C509FA2AEB8980E5C09EB9 /* [CP] Check Pods Manifest.lock */,
 				ADCA462F255DAB5100B8F6D3 /* Sources */,
 				ADCA4630255DAB5100B8F6D3 /* Frameworks */,
 				ADCA4631255DAB5100B8F6D3 /* Resources */,
+				19DF3D47EA24D7906EE6856B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,6 +205,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADCA4646255DAB5100B8F6D3 /* LaunchScreen.storyboard in Resources */,
+				AD59CA50255EA6ED009B6C07 /* BlogCell.xib in Resources */,
+				ADCA464F255DAB6500B8F6D3 /* GoogleService-Info.plist in Resources */,
 				ADCA4643255DAB5100B8F6D3 /* Assets.xcassets in Resources */,
 				ADCA463E255DAB5100B8F6D3 /* Main.storyboard in Resources */,
 			);
@@ -135,15 +214,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19DF3D47EA24D7906EE6856B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlogPost/Pods-BlogPost-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlogPost/Pods-BlogPost-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlogPost/Pods-BlogPost-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6C509FA2AEB8980E5C09EB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlogPost-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ADCA462F255DAB5100B8F6D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADCA463B255DAB5100B8F6D3 /* ViewController.swift in Sources */,
+				ADCA463B255DAB5100B8F6D3 /* FirstView.swift in Sources */,
 				ADCA4637255DAB5100B8F6D3 /* AppDelegate.swift in Sources */,
+				ADD0EC5A255DAF380037FEBC /* PostView.swift in Sources */,
+				AD59CA4F255EA6ED009B6C07 /* BlogCell.swift in Sources */,
+				AD59CA53255EAC06009B6C07 /* BlogBrain.swift in Sources */,
+				ADD0EC57255DAF260037FEBC /* BlogView.swift in Sources */,
 				ADCA4639255DAB5100B8F6D3 /* SceneDelegate.swift in Sources */,
+				ADD0EC54255DAF140037FEBC /* RegisterView.swift in Sources */,
+				ADD0EC51255DAF020037FEBC /* LoginView.swift in Sources */,
 				ADCA4641255DAB5100B8F6D3 /* BlogPost.xcdatamodeld in Sources */,
+				ADD0EC5D255DB7C10037FEBC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +415,7 @@
 		};
 		ADCA464B255DAB5100B8F6D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F22A115C0BD23306B9B2E0C2 /* Pods-BlogPost.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +435,7 @@
 		};
 		ADCA464C255DAB5100B8F6D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84419D97BBE314EEC74C2477 /* Pods-BlogPost.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

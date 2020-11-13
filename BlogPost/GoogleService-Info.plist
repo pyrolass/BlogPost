@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>551940571593-bluf9ov9ujmkkqkgb6kffb0ptm3elpbv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.551940571593-bluf9ov9ujmkkqkgb6kffb0ptm3elpbv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAhTF77B3V6PYiY9lHUiTC744CY80OxeLk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>551940571593</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>app.BlogPost</string>
+	<key>PROJECT_ID</key>
+	<string>blogpost-74918</string>
+	<key>STORAGE_BUCKET</key>
+	<string>blogpost-74918.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:551940571593:ios:b137ff7fb384e35b45e818</string>
+	<key>DATABASE_URL</key>
+	<string>https://blogpost-74918.firebaseio.com</string>
+</dict>
+</plist>
