@@ -18,6 +18,9 @@ class BlogView: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     let db = Firestore.firestore()
     
+    var titleB:String?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -69,19 +72,11 @@ class BlogView: UIViewController, UITableViewDataSource, UITableViewDelegate{
     }
     
     func saveItem(title:String, author:String){
-        db.collection(FStore.blogCollection).addDocument(data: [FStore.titleField:title,FStore.authorField:author]) { (error) in
-            
-            //the sender field is for the nameof email in db and the body is for the message send
-            //and the collection name is for the name of the db in fire store
-            if let e=error{
-                print("there was an issue with fabase\(e)")
-                
-            }
-            else{
-                print("success")
-                DispatchQueue.main.async {
-                    
-                }
+        db.collection(FStore.blogCollection).document(title).setData([FStore.titleField:title,FStore.authorField:author,FStore.postsInfo:""]){ err in
+            if let err = err {
+                print("Error writing document: \(err)")
+            } else {
+                print("Document successfully written!")
             }
         }
     }
@@ -134,6 +129,22 @@ class BlogView: UIViewController, UITableViewDataSource, UITableViewDelegate{
     //MARK: - tableViewDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        titleB=blogBrain[indexPath.row].title
         self.performSegue(withIdentifier: Ident.postSegue, sender: self)
+        
+        
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier==Ident.postSegue{
+            let destinationVC = segue.destination as! PostView
+            destinationVC.titleP=titleB
+        }
+    }
+    
+  
+    
+   
 }
