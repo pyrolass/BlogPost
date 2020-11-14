@@ -9,9 +9,14 @@ import UIKit
 import Firebase
 class PostView: UIViewController {
     
+    
+    @IBOutlet weak var uploadIsEnabled: UIButton!
+    @IBOutlet weak var deleteIsEnabled: UIButton!
+    @IBOutlet weak var editEnabled: UIBarButtonItem!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
     var titleP:String?
+    var userEmail:String?
     
     
     let db=Firestore.firestore()
@@ -20,6 +25,7 @@ class PostView: UIViewController {
         // Do any additional setup after loading the view.
         titleLabel.text=titleP
         loadItem()
+        
     }
     
     @IBAction func editButton(_ sender: UIBarButtonItem) {
@@ -40,11 +46,19 @@ class PostView: UIViewController {
     }
     
     @IBAction func deleteButton(_ sender: UIButton) {
+        db.collection(FStore.blogCollection).document(titleLabel.text!).delete() { err in
+            if let err = err {
+                print("Error removing document: \(err)")
+            } else {
+                print("Document successfully removed!")
+            }
+        }
+
     }
     
     func loadItem(){
-        let citiesRef = db.collection(FStore.blogCollection)
-        let query = citiesRef.whereField(FStore.titleField, isEqualTo: titleLabel.text).getDocuments() { (querySnapshot, err) in
+        let blogRef = db.collection(FStore.blogCollection)
+        let query = blogRef.whereField(FStore.titleField, isEqualTo: titleLabel.text).getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {
@@ -53,6 +67,16 @@ class PostView: UIViewController {
                     let data=document.data()
                     if let post=data[FStore.postsInfo] as? String{
                         self.textView.text=post
+                    }
+                    if let user=data[FStore.authorEmail] as? String{
+                        if user==Auth.auth().currentUser?.email{
+                            self.navigationItem.rightBarButtonItem != nil
+                        }
+                        else{
+                            self.navigationItem.rightBarButtonItem = nil
+                            self.uploadIsEnabled.isHidden=true
+                            self.deleteIsEnabled.isHidden=true
+                        }
                     }
                 }
             }

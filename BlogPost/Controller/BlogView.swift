@@ -20,6 +20,8 @@ class BlogView: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     var titleB:String?
     
+    let currentUser=Auth.auth().currentUser?.email
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,11 +70,13 @@ class BlogView: UIViewController, UITableViewDataSource, UITableViewDelegate{
         
         present(alert, animated: true, completion: nil)
         
+        print(Auth.auth().currentUser?.email)
         
     }
     
     func saveItem(title:String, author:String){
-        db.collection(FStore.blogCollection).document(title).setData([FStore.titleField:title,FStore.authorField:author,FStore.postsInfo:""]){ err in
+        db.collection(FStore.blogCollection).document(title).setData([FStore.titleField:title,FStore.authorField:author,FStore.postsInfo:"",
+                                                                      FStore.authorEmail:currentUser]){ err in
             if let err = err {
                 print("Error writing document: \(err)")
             } else {
@@ -141,6 +145,7 @@ class BlogView: UIViewController, UITableViewDataSource, UITableViewDelegate{
         if segue.identifier==Ident.postSegue{
             let destinationVC = segue.destination as! PostView
             destinationVC.titleP=titleB
+            destinationVC.userEmail=currentUser
         }
     }
     

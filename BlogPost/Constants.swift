@@ -25,6 +25,7 @@ struct FStore {
     static let postCollection = "Posts"
     static let postsInfo = "text"
     static let dateField = "date"
+    static let authorEmail = "Email"
     
 }
 

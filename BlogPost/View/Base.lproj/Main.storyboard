@@ -301,8 +301,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="deleteIsEnabled" destination="phZ-4L-bKw" id="PCt-5W-ilZ"/>
+                        <outlet property="editEnabled" destination="JWA-1T-eRe" id="bqy-dp-jzQ"/>
                         <outlet property="textView" destination="mB2-Ss-OlM" id="To1-rW-m5I"/>
                         <outlet property="titleLabel" destination="sSZ-uC-XsL" id="bN8-zH-9Iy"/>
+                        <outlet property="uploadIsEnabled" destination="nGE-z3-rFZ" id="hTL-ra-tqr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nA7-HT-4Iy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
