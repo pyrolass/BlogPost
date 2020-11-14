@@ -202,6 +202,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tHt-Nl-tMN">
+                        <nil key="title"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="2US-E6-IkT">
+                            <rect key="frame" x="181" y="7" width="52" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Log out"/>
+                            <connections>
+                                <action selector="logOutPressed:" destination="DC8-9V-Lf9" eventType="touchUpInside" id="t5g-mk-GQy"/>
+                            </connections>
+                        </button>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="PI2-cs-Qdu">
                             <connections>
                                 <action selector="addBlog:" destination="DC8-9V-Lf9" id="Kqg-zG-Bro"/>
@@ -253,6 +262,7 @@
                                                         <state key="normal" title="Delete"/>
                                                         <connections>
                                                             <action selector="deleteButton:" destination="G9n-bV-NQp" eventType="touchUpInside" id="tNW-x8-s80"/>
+                                                            <segue destination="DC8-9V-Lf9" kind="show" id="Ffx-td-FcJ"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGE-z3-rFZ">
@@ -261,6 +271,7 @@
                                                         <state key="normal" title="Upload"/>
                                                         <connections>
                                                             <action selector="uploadButton:" destination="G9n-bV-NQp" eventType="touchUpInside" id="WWp-Pl-3PD"/>
+                                                            <segue destination="DC8-9V-Lf9" kind="show" id="cJs-tB-Icj"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>

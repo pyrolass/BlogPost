@@ -51,17 +51,19 @@ class BlogView: UIViewController, UITableViewDataSource, UITableViewDelegate{
         
         alert.addTextField { (titleAlert) in
             titleAlert.placeholder = "add title"
-            title=titleAlert
+                title=titleAlert
         }
         alert.addTextField { (authorAlert) in
             authorAlert.placeholder = "add author name"
-            author=authorAlert
+
+                author=authorAlert
         }
         
         let action = UIAlertAction(title: "add story", style: .default) {_ in
-            self.blogBrain.append(BlogBrain(title: title.text!, author: author.text!))
-            self.saveItem(title: title.text!, author: author.text!)
             
+                self.blogBrain.append(BlogBrain(title: title.text!, author: author.text!))
+                self.saveItem(title: title.text!, author: author.text!)
+
             
         }
         alert.addAction(action)
@@ -70,7 +72,7 @@ class BlogView: UIViewController, UITableViewDataSource, UITableViewDelegate{
         
         present(alert, animated: true, completion: nil)
         
-        print(Auth.auth().currentUser?.email)
+        
         
     }
     
@@ -140,6 +142,7 @@ class BlogView: UIViewController, UITableViewDataSource, UITableViewDelegate{
         
     }
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier==Ident.postSegue{
@@ -150,6 +153,21 @@ class BlogView: UIViewController, UITableViewDataSource, UITableViewDelegate{
     }
     
   
-    
+    //MARK: - logOut req
    
+    
+    @IBAction func logOutPressed(_ sender: UIButton) {
+        
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            navigationController?.popToRootViewController(animated: true)
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        
+    }
+    
+    
+    
 }

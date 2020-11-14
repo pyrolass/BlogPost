@@ -25,12 +25,12 @@ class PostView: UIViewController {
         // Do any additional setup after loading the view.
         titleLabel.text=titleP
         loadItem()
-        
+        textView.isEditable=false
     }
     
     @IBAction func editButton(_ sender: UIBarButtonItem) {
         
-        
+        textView.isEditable=true
         
     }
     
@@ -41,6 +41,7 @@ class PostView: UIViewController {
                 print("Error writing document: \(err)")
             } else {
                 print("Document successfully written!")
+                
             }
         }
     }
