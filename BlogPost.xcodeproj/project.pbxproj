@@ -94,7 +94,7 @@
 			children = (
 				ADCA4636255DAB5100B8F6D3 /* AppDelegate.swift */,
 				ADCA4638255DAB5100B8F6D3 /* SceneDelegate.swift */,
-				ADCA4651255DAB7B00B8F6D3 /* Main */,
+				ADCA4651255DAB7B00B8F6D3 /* Model */,
 				ADCA4652255DAB8500B8F6D3 /* View */,
 				ADCA4653255DABA000B8F6D3 /* Controller */,
 				ADCA4642255DAB5100B8F6D3 /* Assets.xcassets */,
@@ -107,12 +107,12 @@
 			path = BlogPost;
 			sourceTree = "<group>";
 		};
-		ADCA4651255DAB7B00B8F6D3 /* Main */ = {
+		ADCA4651255DAB7B00B8F6D3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				AD59CA52255EAC06009B6C07 /* BlogBrain.swift */,
 			);
-			path = Main;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		ADCA4652255DAB8500B8F6D3 /* View */ = {
