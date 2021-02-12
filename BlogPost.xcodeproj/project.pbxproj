@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36382C53DDF89F9D44C09129 /* Pods_BlogPost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82CEC4163D4046B983FE4EE /* Pods_BlogPost.framework */; };
 		AD59CA4F255EA6ED009B6C07 /* BlogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD59CA4D255EA6ED009B6C07 /* BlogCell.swift */; };
 		AD59CA50255EA6ED009B6C07 /* BlogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD59CA4E255EA6ED009B6C07 /* BlogCell.xib */; };
 		AD59CA53255EAC06009B6C07 /* BlogBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD59CA52255EAC06009B6C07 /* BlogBrain.swift */; };
@@ -24,9 +23,11 @@
 		ADD0EC57255DAF260037FEBC /* BlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD0EC56255DAF260037FEBC /* BlogView.swift */; };
 		ADD0EC5A255DAF380037FEBC /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD0EC59255DAF380037FEBC /* PostView.swift */; };
 		ADD0EC5D255DB7C10037FEBC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD0EC5C255DB7C10037FEBC /* Constants.swift */; };
+		D851F2CDF24EE945B498301F /* libPods-BlogPost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58164C3504961DDB84D10A50 /* libPods-BlogPost.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58164C3504961DDB84D10A50 /* libPods-BlogPost.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlogPost.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84419D97BBE314EEC74C2477 /* Pods-BlogPost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlogPost.release.xcconfig"; path = "Target Support Files/Pods-BlogPost/Pods-BlogPost.release.xcconfig"; sourceTree = "<group>"; };
 		AD59CA4D255EA6ED009B6C07 /* BlogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogCell.swift; sourceTree = "<group>"; };
 		AD59CA4E255EA6ED009B6C07 /* BlogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlogCell.xib; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		ADD0EC56255DAF260037FEBC /* BlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogView.swift; sourceTree = "<group>"; };
 		ADD0EC59255DAF380037FEBC /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		ADD0EC5C255DB7C10037FEBC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		C82CEC4163D4046B983FE4EE /* Pods_BlogPost.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlogPost.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22A115C0BD23306B9B2E0C2 /* Pods-BlogPost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlogPost.debug.xcconfig"; path = "Target Support Files/Pods-BlogPost/Pods-BlogPost.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36382C53DDF89F9D44C09129 /* Pods_BlogPost.framework in Frameworks */,
+				D851F2CDF24EE945B498301F /* libPods-BlogPost.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +140,7 @@
 		FCBB350E9C3B8139765F3A10 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C82CEC4163D4046B983FE4EE /* Pods_BlogPost.framework */,
+				58164C3504961DDB84D10A50 /* libPods-BlogPost.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,7 +156,7 @@
 				ADCA462F255DAB5100B8F6D3 /* Sources */,
 				ADCA4630255DAB5100B8F6D3 /* Frameworks */,
 				ADCA4631255DAB5100B8F6D3 /* Resources */,
-				19DF3D47EA24D7906EE6856B /* [CP] Embed Pods Frameworks */,
+				28770A3E255047E2ED04D270 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,21 +215,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		19DF3D47EA24D7906EE6856B /* [CP] Embed Pods Frameworks */ = {
+		28770A3E255047E2ED04D270 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BlogPost/Pods-BlogPost-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-BlogPost/Pods-BlogPost-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BlogPost/Pods-BlogPost-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-BlogPost/Pods-BlogPost-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlogPost/Pods-BlogPost-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlogPost/Pods-BlogPost-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B6C509FA2AEB8980E5C09EB9 /* [CP] Check Pods Manifest.lock */ = {
